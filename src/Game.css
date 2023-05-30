@@ -1,0 +1,103 @@
+body {
+    background-color: paleturquoise;
+}
+.gameCircle{
+    width:100px;
+    height:100px;
+    margin:10px;
+     border-radius:50%;
+     border:5px solid black;
+     
+}
+
+.panel{
+    position: absolute;
+    background-color: lightgoldenrodyellow;
+    border: 8px sloid burlywood;
+    -webkit-box-shadow:7px 5px 15px 3px rgba(0,0,0,0.9);
+    box-shadow: 7px 5px 15px 3px rgba(0,0,0,0.9);
+    z-index: 1;
+
+}
+.app-container{ 
+     left: 50%;
+    top: 10%;
+    height: 800px;
+    width: 800px;
+    position: absolute;
+    margin-left: -400px;
+}
+
+
+.header{
+    left: 30%;
+    top: 90px;
+    height: 80px;
+    width: 500px;
+    margin-left: -120px;
+}
+.header-text{
+    font-size: 30px;
+    font-weight: bold;
+    width: 250px;
+    margin: 0;
+    position: absolute;
+    top:50%;
+    left:50%;
+    -ms-transform: translate(-50% -50%);
+    transform: translate(-50% -50%);
+}
+
+.footer{
+    left: 50%;
+    top: 750px;
+    height: 80px;
+    width: 300px;
+    margin-left: -120px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+.footer button{
+   
+    margin-left: 5px;
+    margin-top: 15px;
+    width:140px;
+    height: 50px;
+    background-color: lightblue;
+    font-size: 20px;
+    -webkit-box-shadow:3px 5px 10px 2px rgba(0,0,0,0.9);
+    box-shadow: 3px 5px 10px 2px rgba(0,0,0,0.9);
+    border: 5px solid chocolate;
+    font-weight: bold;
+}
+
+.footer button:hover{
+    background-color: chocolate;
+}
+.gameBoard{
+    display:grid ;
+    grid-template-columns: repeat(4,1fr); 
+    grid-template-rows:repeat(4,1fr);
+    padding:20px; 
+    width:500px;
+    position:absolute;
+    left:50%;
+    margin-left:-250px;
+    top:20%;
+    background-color: bisque;
+    border: 8px sloid burlywood;
+    border-radius: 8%;
+    -webkit-box-shadow:7px 5px 15px 3px rgba(0,0,0,0.9);
+    box-shadow: 7px 5px 15px 3px rgba(0,0,0,0.9);
+
+}
+.player_0{
+    background-color: white;
+}
+.player_1{
+    background-color:red;
+}
+.player_2{
+    background-color: blue;
+}
